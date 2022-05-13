@@ -18,3 +18,17 @@ function saveEvent() {
 
     localStorage.setItem(hour, event);
 }
+
+function getEvents() {
+    $('.row').each((i, row) => {
+        var hour = $(row).attr('id');
+        var event = localStorage.getItem(hour);
+
+        if (event) {
+            $(row).find('textarea').val(event);
+        }
+    });
+}
+
+
+getEvents();
