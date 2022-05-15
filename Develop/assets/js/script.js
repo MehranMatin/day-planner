@@ -1,15 +1,11 @@
-var currentDay = $('#currentDay');
+// displays the current date on page
 var today = new Date();
-currentDay.text(today.toLocaleDateString());
+var currentDate = $('#currentDate');
+currentDate.text(today.toLocaleDateString());
 
 // current hour adds bootstrap class to element
 var hour = today.getHours();
 $('#_' + hour).addClass('present');
-
-// event listeners for save button
-$('button').each((i, button) => {
-    $(button).click(saveEvent);
-});
 
 function saveEvent() {
     var row = $(this).closest('.row');
@@ -30,5 +26,9 @@ function getEvents() {
     });
 }
 
-
 getEvents();
+
+// event listeners for save button
+$('button').each((i, button) => {
+    $(button).click(saveEvent);
+});
