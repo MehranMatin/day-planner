@@ -7,7 +7,7 @@ Using the date classes will be added to each time block to adjust its color base
 https://mehranmatin.github.io/day-planner/
 
 ## Day Scheduler App Screenshot
-![password generator demo screenshot](./assets/images/mockup.png)
+![password generator demo screenshot](assets/images/mockup.png)
 
 ## Refactored By
 Mehran M.
